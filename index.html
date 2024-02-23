@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta http-equiv="x-ua-compatible" content="IE=edge">
+	<meta name="author" content="ZamaJobe">
+	<meta name="description" content="Notable Sockwear Landing page">
+	<!-- Font Imports -->
+	<link rel="stylesheet" href="https://use.typekit.net/gmv6nzn.css">
+
+	<!-- Core Style -->
+	<link rel="stylesheet" href="style.css">
+
+	<!-- Font Icons -->
+	<link rel="stylesheet" href="css/font-icons.css">
+
+	<!-- Plugins/Components CSS -->
+	<link rel="stylesheet" href="css/swiper.css">
+
+	<!-- Niche Demos -->
+	<link rel="stylesheet" href="demos/speaker/speaker.css">
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="css/custom.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Document Title
+	============================================= -->
+	<title>Notable Sockwear</title>
+
+</head>
+
+<body class="stretched">
+
+	<!-- Document Wrapper
+	============================================= -->
+	<div id="wrapper">
+
+		<!-- Modal -->
+		<div class="modal d-none animated fadeInUpSmall faster" id="speakerModal" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered ms-md-4 me-md-auto align-items-end" style="max-width: 48rem;">
+				<div class="modal-content shadow border-0 overflow-hidden" style="border-radius: 20px;">
+					<div class="card border-0">
+						<div class="row justify-content-between g-0">
+							<div class="col-sm-5" style="background: url('demos/speaker/images/modal.jpg') no-repeat center center / cover; min-height: 200px;"></div>
+							<div class="col-sm-6">
+								<div class="card-body p-5">
+									<p class="mb-2 color small">Get 20% off* your first Order</p>
+									<h3 class="card-title lh-sm mb-3">Bring your Music at your home</h3>
+									<p class="fw-normal text-smaller op-06">Professionally evolve intermandated e-business rather than bricks-and-clicks markets.</p>
+									<div class="subscribe-widget" data-loader="button">
+										<div class="widget-subscribe-form-result"></div>
+										<form id="widget-subscribe-form-modal" action="include/subscribe.php" method="post" class="mb-0">
+											<div class="input-group">
+												<input type="email" id="widget-subscribe-form-modal-email" name="widget-subscribe-form-modal-email" class="form-control required email" placeholder="Enter your Email Address">
+												<button class="btn btn-dark h-bg-color border-0" type="submit"><i class="bi-arrow-right"></i></button>
+											</div>
+										</form>
+									</div>
+									<button type="button" class="btn-close p-3 position-absolute top-0 end-0" data-bs-dismiss="modal" aria-label="Close"></button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- Header
+		============================================= -->
+		<header id="header" class="header-size-sm" data-sticky-shrink="false">
+			<div id="header-wrap" class="border-bottom-0">
+				<div class="container">
+					<div class="header-row justify-content-lg-between">
+
+						<!-- Logo
+						============================================= -->
+						<div id="logo" class="me-lg-0">
+							<a href="index.html">Notable Sockwear <span class="color">.</span></a>
+						</div><!-- #logo end -->
+
+						<div class="header-misc">
+
+							<!-- Top Cart
+							============================================= -->
+							<div id="top-cart" class="header-misc-icon me-3">
+								<a href="#" id="top-cart-trigger"><i class="bi-basket3"></i></a>
+								<div class="top-cart-content">
+									<div class="top-cart-title">
+										<h4 class="fw-normal">Shopping Cart</h4>
+									</div>
+									<div class="top-cart-items py-4">
+										<p class="mb-0">Ohh! Your Basket is empty.</p>
+									</div>
+									<div class="top-cart-action">
+										<a href="#" class="button button-small bg-color color bg-opacity-10 m-0">Go to Shop</a>
+										<span class="top-checkout-price">$0.00</span>
+									</div>
+								</div>
+							</div><!-- #top-cart end -->
+
+							<!-- Top Account
+							============================================= -->
+							<div class="header-misc-icon top-account">
+								<a href="#" data-bs-toggle="dropdown" data-bs-offset="0,20" data-bs-auto-close="true" aria-haspopup="true" aria-expanded="false"><i class="bi-person-circle"></i></a>
+								<div class="dropdown-menu dropdown-menu-end px-2 m-0">
+									<a class="dropdown-item py-2 fw-medium h-bg-tranparent font-primary" href="#"><i class="bi-bag-check me-2"></i>Your Orders</a>
+									<a class="dropdown-item py-2 fw-medium h-bg-tranparent font-primary" href="#"><i class="bi-person me-2"></i>Your Profile</a>
+									<a class="dropdown-item py-2 fw-medium h-bg-tranparent font-primary" href="#"><i class="bi-box-arrow-right me-2"></i>Log Out</a>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="primary-menu-trigger">
+							<button class="cnvs-hamburger" type="button" title="Open Mobile Menu">
+								<span class="cnvs-hamburger-box"><span class="cnvs-hamburger-inner"></span></span>
+							</button>
+						</div>
+
+						<nav class="primary-menu">
+
+							<ul class="menu-container">
+								<li class="menu-item current"><a class="menu-link" href="#"><div>Home</div></a></li>
+								<li class="menu-item"><a class="menu-link" href="#"><div>Contact</div></a></li>
+								<li class="menu-item"><a class="menu-link" href="#"><div>Shop</div></a></li>
+								<li class="menu-item"><a class="menu-link" href="#"><div>About</div></a></li>
+								<li class="menu-item"><a class="menu-link" href="#"><div>Contact</div></a></li>
+							</ul>
+
+						</nav><!-- #primary-menu end -->
+
+						<form class="top-search-form" action="search.html" method="get">
+							<input type="text" name="q" class="form-control" value="" placeholder="Type &amp; Hit Enter.." autocomplete="off">
+						</form>
+
+					</div>
+				</div>
+			</div>
+			<div class="header-wrap-clone"></div>
+		</header><!-- #header end -->
+
+
+		<!-- Hero
+		============================================= -->
+		<section id="slider" class="slider-element py-5 mt-lg-5">
+
+			<div class="container">
+				<div class="row flex-sm-row-reverse justify-content-center justify-content-lg-between col-mb-80">
+					<div class="col-lg-6 col-8">
+						<div class="dotted-bg">
+							<img src="socks images - Copy/Funky Socks- Product Photography- Product Styling- Melissa Jade Creative_.jpg" alt="Image 1" class="d-flex z-1 ms-auto w-100 position-relative" style="border-radius: 2rem;">
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<h3 class="color fs-5 mb-3">Elevate your sock game to new heights!</h3>
+						<h1 class="display-3 text-stretch">We believe in delivering excellence, not just quantity. </h1>
+						<p class="mb-5 text-larger font-primary me-3">Immerse yourself in the symphony of quality with our premium socks collection.</p>
+						<div class="d-flex align-items-center mb-6">
+							<a href="#" class="button button-xlarge bg-opacity-10 bg-color color ms-0 px-5 px-md-6 py-3 m-0">Shop Now</a>
+							<small class="ms-4 op-06 font-primary">Starting at R99 only..</small>
+						</div>
+
+						<div class="row col-mb-30">
+							<div class="col-6">
+								<div class="counter fw-normal text-dark"><span data-from="1" data-to="100" data-refresh-interval="10" data-speed="1000"></span>%</div>
+								<h4 class="fw-normal mb-0">Premium Comfort</h4>
+								<span class="fw-light op-05">in every pair</span>
+							</div>
+
+							<div class="col-6">
+								<div class="counter fw-normal text-dark"><span data-from="1" data-to="50" data-refresh-interval="4" data-speed="1000"></span></div>
+								<h4 class="fw-normal mb-0">Styles to choose from</h4>
+								<span class="fw-light op-05">at a time</span>
+							</div>
+
+							<div class="col-6">
+								<div class="counter fw-normal text-dark"><span data-from="1" data-to="40" data-refresh-interval="10" data-speed="1000"></span>+</div>
+								<h4 class="fw-normal mb-0">Colours Included</h4>
+								<span class="fw-light op-05">in every design</span>
+							</div>
+
+							<div class="col-6">
+								<div class="counter fw-normal text-dark"><span data-from="1" data-to="99" data-refresh-interval="10" data-speed="1000"></span>%</div>
+								<h4 class="fw-normal mb-0">Snug Fit Rate</h4>
+								<span class="fw-light op-05">for all occassions</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+
+		<!-- Content
+		============================================= -->
+		<section id="content">
+			<div class="content-wrap pb-0 pt-0 pt-lg-5">
+
+				<div class="section section-1-bg my-0">
+					<div class="container py-0 py-lg-6">
+						<div class="row justify-content-between col-mb-80">
+
+							<div class="col-lg-4">
+								<h2>We believe in delivering excellence, not just quantity.</h2>
+								<p class="mb-5 text-larger font-primary me-3">Step into the world of exceptional sock experiences – where every thread tells a story of comfort and style. Shop now and embrace the luxury of premium socks at an affordable price!</p>
+								<a href="#" class="button button-dark bg-dark bg-opacity-10 text-dark h-bg-color m-0 px-4 py-2">View More</a>
+							</div>
+
+							<div class="col-lg-8 mb-lg-6">
+								<div class="row g-5 justify-content-end">
+									<div class="col-sm-6 col-lg-5">
+										<i class="fs-2 mb-3 color bi bi-emoji-smile"></i>
+										<h4 class="fw-normal text-uppercase ls-2 mb-3">ULTIMATE COMFORT FIT <small class="fw-light h6 align-text-top op-05">&reg;</small></h4>
+										<p class="fw-light op-08">Immerse yourself in the luxurious embrace of our socks, meticulously crafted for ultimate comfort. Each pair is a testament to our commitment to delivering excellence, ensuring your feet experience nothing but the best.</p>
+									</div>
+
+									<div class="col-sm-6 col-lg-5">
+										<i class="fs-2 mb-3 color bi bi-cart-plus-fill"></i>
+										<h4 class="fw-normal text-uppercase ls-2 mb-3">VARIETY OF DESIGNS</h4>
+										<p class="fw-light op-08">From classic elegance to trendy patterns, our sock collection caters to diverse styles. Unveil a world of choices that effortlessly complement your wardrobe, turning every step into a fashion statement</p>
+									</div>
+
+									<div class="col-sm-6 col-lg-5">
+										<i class="fs-2 mb-3 color bi bi-puzzle"></i>
+										<h4 class="fw-normal text-uppercase ls-2 mb-3">SEAMLESS QUALITY</h4>
+										<p class="fw-light op-08">pWe prioritize quality over quantity, guaranteeing socks that not only look great but also stand the test of time. Embrace the durability of our designs, where every stitch reflects our dedication to providing exceptional products.</p>
+									</div>
+
+									<div class="col-sm-6 col-lg-5">
+										<i class="fs-2 mb-3 color bi bi-currency-dollar"></i>
+										<h4 class="fw-normal text-uppercase ls-2 mb-3">AFFORDABLE LUXURY</h4>
+										<p class="fw-light op-08">Experience the joy of premium socks without breaking the bank. Our commitment to affordability ensures that you can enjoy the luxury of high-quality socks without compromising on your budget.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="section py-0 mt-0 slider-element swiper_wrapper bg-dark dark customjs noice-effect">
+
+					<div class="swiper-container swiper-parent">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="row g-0 align-items-stretch">
+									<div class="col-md-6 swiper-slide-info my-6 d-flex justify-content-center flex-column">
+										<div class="px-4 px-sm-5 px-lg-6 position-relative">
+											<div class="dotted-bg pos-left" style="--cnvs-dotted-opacity: .3; --cnvs-dotted-top: 10px; --cnvs-dotted-left: 30px; --cnvs-dotted-size: 90px;"></div>
+											<div class="z-1 position-relative">
+												<h2 class="display-5">Ultimate Sock Collection</h2>
+												<p class="op-09 fw-light mb-5"> Explore a diverse selection of Elements  &amp; and seamlessly incorporate them into your Sock Wardrobe.</p>
+												<ul class="list-unstyled fw-light mb-0">
+													<li class="mt-2"><i class="bi-check-circle-fill me-2 color"></i> Everyday Comfort</li>
+													<li class="mt-2"><i class="bi-check-circle-fill me-2 color"></i> Revolutionary sock technology for an all-around cozy experience</li>
+													<li class="mt-2"><i class="bi-check-circle-fill me-2 color"></i> Sock Symphony</li>
+													<li class="mt-2"><i class="bi-check-circle-fill me-2 color"></i>Designed to complement any sock drawer</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<img src="socks images - Copy/Ties_com _ Superior Quality Men's Ties & Accessories _ Free Shipping.jpg" alt="Image 1" class="d-flex z-1 ms-auto w-100 position-relative" style="border-radius: 2rem;">
+									</div>
+								</div>
+							</div>
+							
+									</div>
+								</div>
+							</div>
+							
+					<div class="row g-0 justify-content-end align-items-end swiper-thumb-wrap">
+						<div class="col-md-6">
+							<div class="swiper-button-next text-white"></div>
+      						<div class="swiper-button-prev text-white"></div>
+							<div class="swiper-thumb">
+								
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+		<!-- About us section		 -->
+		<section id="about-us-section">
+			<div class="content-wrap">
+				<div class="container">
+
+					<h2 style="font-size: 100px;">About us</h2>
+
+					<div class="row col-mb-50 mb-0">
+
+
+
+						<div class="col-lg-4">
+
+							<div class="heading-block fancy-title border-bottom-0 title-bottom-border">
+								<h4>Why Choose Our <span>Socks</span>?</h4>
+							</div>
+
+							<p>Discover the comfort and style that sets our socks apart. We take pride in offering a wide range of high-quality socks that not only provide unparalleled comfort but also make a fashion statement.</p>
+
+						</div>
+
+						<div class="col-lg-4">
+
+							<div class="heading-block fancy-title border-bottom-0 title-bottom-border">
+								<h4>Our Mission in Footwear <span> Excellence</span>.</h4>
+							</div>
+
+							<p>At our core, we are dedicated to revolutionizing your sock experience. We strive to deliver exceptional comfort, durability, and style to your everyday life. With a commitment to quality, we aim to be your go-to destination for premium socks.</p>
+
+						</div>
+
+						<div class="col-lg-4">
+
+							<div class="heading-block fancy-title border-bottom-0 title-bottom-border">
+								<h4>What Sets Our Socks<span>Apart</span>.</h4>
+							</div>
+
+							<p>Step into a world of unparalleled quality and style with our diverse selection of socks. From cozy everyday essentials to trendy and vibrant designs, our socks are crafted with precision and attention to detail. Experience the perfect blend of fashion and functionality, as our socks not only complement your outfit but also provide the comfort your feet deserve.</p>
+
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="section m-0">
+					<div class="container">
+
+						<div class="row col-mb-50">
+
+							<div class="col-sm-6 col-lg-3 text-center" data-animate="bounceIn">
+	                           <div class="counter counter-lined"><span data-from="1" data-to="100" data-refresh-interval="50" data-speed="2000"></span>K+</div>
+								<h5>SOCK DESIGNS</h5>
+							</div>
+
+							<div class="col-sm-6 col-lg-3 text-center" data-animate="bounceIn" data-delay="200">
+								<div class="counter counter-lined"><span data-from="1" data-to="10" data-refresh-interval="100" data-speed="2500"></span>+</div>
+								<h5>SOCK CATEGORIES</h5>
+							</div>
+
+							<div class="col-sm-6 col-lg-3 text-center" data-animate="bounceIn" data-delay="400">
+								<div class="counter counter-lined"><span data-from="10" data-to="100" data-refresh-interval="25" data-speed="3500"></span>%</div>
+								<h5>SUSATINABLE SORCED COTTON</h5>
+							</div>
+
+							<div class="col-sm-6 col-lg-3 text-center" data-animate="bounceIn" data-delay="600">
+								<div class="counter counter-lined"><span data-from="1" data-to="10" data-refresh-interval="30" data-speed="2700"></span>+</div>
+								<h5>SUPPORT TEAM MEMEBERS</h5>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+
+
+
+				
+		</section><!-- #content end -->
+
+		<!-- contact-us-section -->
+		
+		<!-- Contact Form Overlay
+					============================================= -->
+					<div class="contact-form-overlay col-md-8 offset-md-2 p-5">
+
+						<div class="fancy-title title-border">
+							<h3 style="font-size: 100px;">Contact us</h3>
+						</div>
+
+						<div class="form-widget">
+
+							<div class="form-result"></div>
+
+							<!-- Contact Form
+							============================================= -->
+							<form class="row mb-0" id="template-contactform" name="template-contactform" action="include/form.php" method="post">
+
+								<div class="col-md-6 form-group">
+									<label for="template-contactform-name">Name <small>*</small></label>
+									<input type="text" id="template-contactform-name" name="template-contactform-name" value="" class="form-control required">
+								</div>
+
+								<div class="col-md-6 form-group">
+									<label for="template-contactform-email">Email <small>*</small></label>
+									<input type="email" id="template-contactform-email" name="template-contactform-email" value="" class="required email form-control">
+								</div>
+
+								<div class="w-100"></div>
+
+								<div class="col-md-6 form-group">
+									<label for="template-contactform-phone">Phone</label>
+									<input type="text" id="template-contactform-phone" name="template-contactform-phone" value="" class="form-control">
+								</div>
+
+								<div class="col-md-6 form-group">
+									<label for="template-contactform-service">Type of Enquieries</label>
+									<select id="template-contactform-service" name="template-contactform-service" class="form-select">
+										<option value="">-- Select One --</option>
+										<option value="New Products">New Products</option>
+										<option value="Returns or Exchange">Returns or Exchanges</option>
+										<option value="Track order status">Track order status</option>
+										<option value="Looking for an item in stock">Looking for an item in stock</option>
+									</select>
+								</div>
+
+								<div class="w-100"></div>
+
+								<div class="col-12 form-group">
+									<label for="template-contactform-subject">Subject <small>*</small></label>
+									<input type="text" id="template-contactform-subject" name="subject" value="" class="required form-control">
+								</div>
+
+								<div class="col-12 form-group">
+									<label for="template-contactform-message">Message <small>*</small></label>
+									<textarea class="required form-control" id="template-contactform-message" name="template-contactform-message" rows="6" cols="30"></textarea>
+								</div>
+
+								<div class="col-12 form-group d-none">
+									<input type="text" id="template-contactform-botcheck" name="template-contactform-botcheck" value="" class="form-control">
+								</div>
+
+								<div class="col-12 form-group">
+									<button class="button button-3d m-0" type="submit" id="template-contactform-submit" name="template-contactform-submit" value="submit">Send Message</button>
+								</div>
+
+								<input type="hidden" name="prefix" value="template-contactform-">
+
+							</form>
+						</div>
+
+						<div class="line"></div>
+
+						<div class="row col-mb-50">
+							<!-- Contact Info
+							============================================= -->
+							<div class="col-md-4">
+								<address>
+									<strong>Headquarters:</strong><br>
+									795 Folsom Ave, Suite 600<br>
+									San Francisco, CA 94107<br>
+								</address>
+								<abbr title="Phone Number"><strong>Phone:</strong></abbr> (1) 8547 632521<br>
+								<abbr title="Fax"><strong>Fax:</strong></abbr> (1) 11 4752 1433<br>
+								<abbr title="Email Address"><strong>Email:</strong></abbr> info@canvas.com
+							</div><!-- Contact Info End -->
+
+							
+						</div>
+
+					</div><!-- Contact Form Overlay End -->
+				</div>
+
+			</div>
+		
+
+		<!-- Footer
+		============================================= -->
+		<footer id="footer" class="bg-white border-0">
+			<div class="container">
+
+				<!-- Footer Widgets
+				============================================= -->
+				<div class="footer-widgets-wrap">
+
+					<div class="row justify-content-center text-center col-mb-50">
+						<div class="col-lg-5 col-md-10">
+							<h2>Follow Us if you want to know how magical <span>socks</span> really are.</h2>
+
+							<div class="d-flex justify-content-center">
+								<a href="#" class="social-icon si-small text-light bg-color bg-opacity-10 color h-bg-facebook border-0">
+									<i class="fa-brands fa-facebook-f"></i>
+									<i class="fa-brands fa-facebook-f"></i>
+								</a>
+
+								<a href="#" class="social-icon si-small text-light bg-color bg-opacity-10 color h-bg-twitter border-0">
+									<i class="fa-brands fa-twitter"></i>
+									<i class="fa-brands fa-twitter"></i>
+								</a>
+
+								<a href="#" class="social-icon si-small text-light bg-color bg-opacity-10 color h-bg-pinterest border-0">
+									<i class="fa-brands fa-pinterest-p"></i>
+									<i class="fa-brands fa-pinterest-p"></i>
+								</a>
+
+								<a href="#" class="social-icon si-small text-light bg-color bg-opacity-10 color h-bg-instagram border-0">
+									<i class="bi-instagram"></i>
+									<i class="bi-instagram"></i>
+								</a>
+							</div>
+
+						</div>
+
+					</div>
+
+					<!--  -->
+
+	</div><!-- #wrapper end -->
+
+	<!-- Go To Top
+	============================================= -->
+	<div id="gotoTop" data-mobile="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none"><circle cx="50" cy="50" r="40"></circle></svg></div>
+
+	<!-- JavaScripts
+	============================================= -->
+	<script src="js/jquery.js"></script>
+	<script src="js/functions.js"></script>
+
+	<script>
+		window.addEventListener( 'pluginSwiperReady', () => {
+			var swiperThumb = new Swiper(".swiper-thumb", {
+				spaceBetween: 10,
+				slidesPerView: 4,
+				allowTouchMove: true,
+				freeMode: true,
+				watchSlidesProgress: true,
+			});
+			var swiperContainer = new Swiper(".swiper-container", {
+				spaceBetween: 10,
+				allowTouchMove: true,
+				navigation: {
+					nextEl: ".swiper-button-next",
+					prevEl: ".swiper-button-prev",
+				},
+				thumbs: {
+					swiper: swiperThumb,
+				},
+			});
+
+			//GotoTop
+			var cssPosGotoTop = getComputedStyle(document.querySelector('#gotoTop'));
+			var canvasPageScrollPos = (cssPosGotoTop.getPropertyValue('--cnvs-gotoTop-scroll'));
+			var canvasbodyHeight = document.body.offsetHeight;
+
+			window.addEventListener( 'scroll', function() {
+				var scrollPercent = (jQuery(window).scrollTop()) / ((jQuery(document).height()) - (jQuery(window).height()));
+				var getPercent = Math.round(scrollPercent*100);
+
+				document.querySelector('#gotoTop').style.setProperty('--cnvs-gotoTop-scroll', ( 260 - (2.6 * getPercent) ) );
+			});
+		});
+
+		window.onload = () => {
+			const container = document.getElementById("speakerModal");
+			const modal = new bootstrap.Modal(container);
+			modal.show();
+		};
+  </script>
+
+</body>
+</html>
